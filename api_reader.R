@@ -1,4 +1,9 @@
 setwd("L:/Prices/API/API 2015/Machine readable")
+
+if (!require("pacman")) install.packages("pacman")
+library(pacman)
+pacman::p_load(dplyr, readxl, data.table, stringr, tidyr, janitor, lubridate)
+
 library(readxl)
 library(tidyr)
 library(stringr)

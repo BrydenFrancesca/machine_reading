@@ -1,4 +1,9 @@
 setwd("L:/Prices/AMR/Livestock/MONTHLY/Machine readable")
+
+if (!require("pacman")) install.packages("pacman")
+library(pacman)
+pacman::p_load(dplyr, readxl, data.table, stringr, tidyr)
+
 library(readxl)
 library(tidyr)
 library(stringr)
